@@ -1,5 +1,5 @@
  // il numero massimo di email
- const maxNum = 10;
+ const maxNum = parseInt(prompt('Inserisci il numero di email da visualizzare')); // Rendiamolo un minimo interattivo
 
  // OTTENGO I COMPONENTI
 const $one = document.querySelector.bind(document);

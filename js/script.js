@@ -8,6 +8,9 @@ const $tableBody = $one('#table-body');   // Ottieni la tabella dove caricare le
 
 const $btnReload = $one('#reload'); // Ottengo il bottone per il ricaricamento delle mail
 
+const spinnerElement = $one('#spinner'); // ottenmgo uno spinner per il caricamento
+console.log(spinnerElement);
+
  // Carica direttamente le prime 10 email
 getEmails(maxNum);
 
@@ -19,7 +22,6 @@ $btnReload.innerText = `Carica altre ${maxNum} Email`;
 
 $btnReload.addEventListener("click", function() {
    $tableBody.innerHTML = ``;
-
    getEmails(maxNum);
 });
 
